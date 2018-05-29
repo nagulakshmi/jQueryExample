@@ -1,0 +1,82 @@
+div.align {
+  width: 100%;
+  border: 1px solid red;
+}
+
+header, footer {
+  padding: 5px;
+  color: white;
+  background-color: gray;
+  clear: left;
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+  background-color: gray;
+  padding: 5px;
+}
+
+table.login {
+  padding: 147px;
+  border: 1px solid black;
+}
+
+table.register {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+tr.login {
+  padding: 15px;
+}
+
+tr.register {
+  padding: 1px;
+}
+
+#section {
+  text-align: center;
+  color: red;
+}
+
+header.first {
+  width: 960px;
+  height: 610px;
+  margin: 50px auto;
+  font-family: 'Droid Serif', serif;
+  position: relative;
+}
+
+main.main {
+  width: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 300px;
+  padding: 20px 50px 40px;
+  background-color: rgba(187, 255, 184, 0.65);
+  border: 15px solid white;
+  box-shadow: 0 0 10px;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+label {
+  color: #464646;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#button, #rbutton {
+  background-color: lightblue;
+  text-align: center;
+  font-size: 16px;
+}
+div.second
+{
+	margin:10px;
+	padding:12px;
+	 border:2px solid #666;
+	  width:60px;
+}

@@ -5,6 +5,8 @@
 Registration Form
 </title>
 <link rel="stylesheet" href="styles.css">
+<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
 <script type="text/javascript">
 function validation()
 {
@@ -21,7 +23,7 @@ if(firstname=='' || lastname=='' || address=='' || country=='' || mobileno=='' |
 alter('please enter all fields');
 return false;
 }
-else 
+else
 return true;
 }
 </script>
@@ -58,7 +60,7 @@ return true;
 	<td>COUNTRY</td>
 	<td colspan="3">
 	<input list="country" name="country">
-	
+
 	<datalist id="country">
 	<option value ="india">
 	<option value="usa">
@@ -68,7 +70,7 @@ return true;
 </tr>
 <tr>
 	<td>MOBILE NO</td>
-	<td colspan="3"> 
+	<td colspan="3">
 	<input type="tel" maxlength="10"  title="enter valid mobile no" name="no" id="no" value=""></td>
 </tr>
 <tr>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Registration Form
+</title>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+function validation()
+{
+var firstname=document.getElementById('firstname').value;
+var lastname=document.getElementById('lastname').value;
+var address=document.getElementById('address').value;
+var country =document.getElementById('country').value;
+var mobileno=document.getElementById('mobileno').value;
+var dob=document.getElementById('dob').value;
+var email=document.getElementById('email').value;
+var sex=document.getElementById('sex').value;
+if(firstname=='' || lastname=='' || address=='' || country=='' || mobileno=='' ||dob==''||email=='' || sex=='')
+{
+alter('please enter all fields');
+return false;
+}
+else 
+return true;
+}
+</script>
+
+</head>
+<body>
+<header>
+<img src ="images1.jpg" alt="register here">
+</header>
+<nav>
+<a href = "login.html"> Login </a> |
+<a href ="logout.html"> Logout</a>
+</nav>
+<section>
+<p> <em> register ur details</em></p>
+</section>
+<section>
+<form  name="registrationform" action ="details.html" method="post" onsubmit="return validation()";>
+<table cellspacing="8" align ="center" class="register" >
+<tr class="register">
+	<td>FIRST NAME</td>
+	<td colspan="3"> <input type="text" title="enter vaild Name" id="firstname" value=""></td>
+</tr>
+<tr>
+	<td>LAST NAME</td>
+	<td colspan="3"> <input type="text" title="enter vaild Name" id="lastname" value=""></td>
+</tr>
+
+<tr>
+	<td>ADDRESS</td>
+	<td colspan="3"> <input type="text" name="address" id="address" value=""></td>
+</tr>
+<tr>
+	<td>COUNTRY</td>
+	<td colspan="3">
+	<input list="country" name="country">
+	
+	<datalist id="country">
+	<option value ="india">
+	<option value="usa">
+	<option value="uae">
+	<option value="australia">
+	</datalist></td>
+</tr>
+<tr>
+	<td>MOBILE NO</td>
+	<td colspan="3"> 
+	<input type="tel" maxlength="10"  title="enter valid mobile no" name="no" id="no" value=""></td>
+</tr>
+<tr>
+	<td>D.O.B</td>
+	<td colspan="3"> <input type="date" name="bday" id="dob" value=""></td>
+</tr>
+<tr>
+	<td>EMAIL</td>
+	<td colspan="3"> <input type="email" name="email" id="email" title="enter valid email address" value="">
+	</td>
+</tr>
+<tr>
+	<td>SEX</td>
+	<td> <input type="radio" name="gender" id="gender" value="male">male</td>
+	<td> <input type="radio" name="gender" id="gender" value="Female">female</td>
+</tr>
+<tr>
+		<td colspan="2"> <input type="submit"  value="submit"></td>
+		<td colspan="2"> <input type="reset" value="reset"></td>
+</tr>
+</table>
+</form>
+</section>
+
+<footer>
+<p>Posted by:<span style="color:purple;">private ltd</span></p>
+</footer>
+
+</body>
+</html>

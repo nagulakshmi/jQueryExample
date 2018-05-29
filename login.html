@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		login page
+	</title>
+	<script type="text/javascript">
+		function validation() {
+			var name = document.getElementById('name').value;
+			var password = document.getElementById('password').value;
+			if (name == '' || password == '') {
+				alert('Enter username and password');
+				return false;
+			} else if (password.length < 4) {
+				alert('password must be atleast 4 characters ');
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="styles\styles.css">
+</head>
+
+<body>
+	<div class="align">
+		<header>
+			<img src="images.jpg" alt="header image" width="1300" height="100">
+		</header>
+		<nav>
+			<a href="register.html">Registration</a> |
+			<a href="login.html">logout</a>
+		</nav>
+		<article>
+			<form name="login" action="register.html" method="post" onsubmit="return validation()" ;>
+				<table cellspacing="20" class="login" align="center">
+					<tr>
+						<td><em>USERNAME</em></td>
+						<td colspan="2"><input type="text" title="enter valid name" id="name" placeholder="username" value=""></td>
+					</tr>
+					<tr>
+						<td> <em> PASSWORD </em></td>
+						<td colspan="2"><input type="password" id="password" placeholder="password" value=""></td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <input type="submit" value="submit"></td>
+						<td> <input type="reset" value="reset"></td>
+					</tr>
+				</table>
+			</form>
+		</article>
+
+		<footer>
+			<p>Posted by:<span style="color:purple;">private ltd</span></p>
+
+
+		</footer>
+
+</body>
+
+</html>

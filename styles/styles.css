@@ -68,7 +68,7 @@ label {
   font-weight: bold;
 }
 
-#button, #rbutton {
+#btnReset, #btnLogin {
   background-color: lightblue;
   text-align: center;
   font-size: 16px;

@@ -5,7 +5,7 @@ $(document).ready(function() {
                 $("#password").val() == 'admin') {
                 ("#first").load("sample.html");
                 //  $("#tt").replaceWith("<h1>hello welcome to my page</h1>");
-                return ture;
+                return true;
             } else {
                 alert("please try again");
                 return false;
